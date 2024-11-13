@@ -3,16 +3,16 @@
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt  # Importação corrigida para o pyplot
+import matplotlib.pyplot as plt 
 import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
 # Carregando o dataset
-# Certifique-se de que o arquivo 'household_power_consumption.txt' esteja no mesmo diretório do projeto,
+# Certifique-se de que o arquivo 'dados-para-o-dash.txt' esteja no mesmo diretório do projeto,
 # ou forneça o caminho completo para o arquivo.
-df = pd.read_csv('household_power_consumption.txt', sep=';', na_values='?')
+df = pd.read_csv('dados-para-o-dash.txt', sep=';', na_values='?')
 
 # Pré-processamento de dados
 df['Date'] = pd.to_datetime(df['Date'], format='%d/%m/%Y')
